@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="imagenes/LogoAlura.png">
+            <p class="titulo">Encriptador de texto</p>
+            <p class="alura">Desafío encriptador Alura latam</p>
+        </h1>
+        
+    </header>
+    <main>
+        <section class="izq">
+            <div class="encriptar">
+                <textarea id="texto-encriptar" class="texto-encriptado" name="texto" oninput="validarTexto()" placeholder="Ingrese el texto aqui" autofocus=""></textarea>
+            </div>
+
+            <div class="Cabeza">
+                <p> <img src="imagenes/Cabeza.svg" alt="Imagen Caveza" class="img-Cabeza">
+                 Solo letras minusculas y sin acentos</p>
+            </div>
+
+            <div class="boton">
+                <button class="boton-encriptar" onclick="encriptar();">Encriptar</button>
+                <button class="boton-desencriptar" onclick="desencriptar();">Desencriptar</button>
+            </div>
+        </section>
+        <section class="derecha">
+            <div>
+                <textarea name="texto-encriptado" class="resultado" id="texto-encriptado" cols="30" rows="10" hidden="" readonly=""></textarea>
+            </div>
+            <div class="imagen-mensaje" id="imagen-mensaje">
+                <img src="imagenes/Muñeco.png" alt="muneco">
+                <h2> No se encontro ningun mensaje</h2>
+                <h2>Ingresa el mensaje que deseas encriptar<h2>
+            </div>
+            <div>
+                <button class="boton-copiar" id="boton-copiar" onclick="copiarTexto();" hidden="">Copiar</button>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        Para Alura latam Desaío Encriptador 2024
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
